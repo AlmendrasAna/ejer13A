@@ -11,8 +11,8 @@ fun main(){
     var redondeoV= redondeo(param1 = 7.6)
     println(redondeoV)
 
-    var muestraResultado= muestraResultado(8.57)
-    println(muestraResultado)
+    var muestraResultados= muestraResultado(8.57)
+    println(muestraResultados)
 
 }
 fun suma (param1:Double,param2:Float):Double = param1 +param2
@@ -24,7 +24,7 @@ fun muestraResultado(numero: Double) : String {
     val format: NumberFormat = NumberFormat.getCurrencyInstance()
     format.setMaximumFractionDigits(2)
     format.setCurrency(Currency.getInstance("EUR"))
-    println(format.format(numero))
+    //println(format.format(numero))
     return format.format(numero)
 
 }
